@@ -5,8 +5,8 @@ def required_module_fuel(mass_: int) -> int:
     return int(mass_ / 3) - 2
 
 
-def list_from_file(filename) -> list:
-    file = open(filename, 'r')
+def list_from_file(filename_: str) -> list:
+    file = open(filename_, 'r')
     return list(map(lambda x: int(x.rstrip()), file.readlines()))
 
 
